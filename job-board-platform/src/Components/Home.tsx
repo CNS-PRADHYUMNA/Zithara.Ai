@@ -174,12 +174,14 @@ const HomePage: React.FC = () => {
                 >
                   Career Advice
                 </a>
-                <button 
-                  onClick={closeMobileMenu} 
-                  className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600"
-                >
-                  Post a Job
-                </button>
+                <Link to={`/jobPosting`}>
+                    <button 
+                      
+                        className="text-white  font-semibold bg-blue-600 p-2 rounded-md cursor-pointer"
+                    >
+                        Post a Job
+                    </button>
+                    </Link>
                 <button 
                   onClick={closeMobileMenu} 
                   className="text-gray-800 hover:text-blue-600"
